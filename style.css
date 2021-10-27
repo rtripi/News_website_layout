@@ -94,3 +94,66 @@ hr {
 .social-icons {
   display: none;
 }
+
+@media (min-width: 800px) {
+  /*nav*/
+  .ham-btn,
+  .times-btn {
+    display: none !important;
+  }
+
+  .nav-container {
+    display: flex;
+    background: #252525;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .top-head {
+    flex: 0 0 15%;
+  }
+  .nav-bar {
+    flex: 1 0 auto;
+    height: 100%;
+    background: transparent;
+  }
+
+  .nav-bar nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-bar nav ul li {
+    padding-right: 30px;
+  }
+  .nav-bar nav ul li:hover {
+    background: none;
+  }
+
+  .nav-bar nav ul li a:hover {
+    font-size: inherit;
+  }
+
+  .social-icons {
+    display: block;
+    margin: 0 auto;
+    flex: 0 1 30%;
+  }
+
+  .social-icons .fab {
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    /*margin: 0 9px;*/
+  }
+
+  .social-icons ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0 20px;
+  }
+
+  .social-icons ul li {
+    padding: 20px;
+  }
+}
